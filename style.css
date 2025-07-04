@@ -1,0 +1,75 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+
+}
+
+header {
+    background: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    margin: 0 10x;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skills-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.skills-list li{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project{
+    margin-bottom: 20px;
+    border-left: 4px solid #007acc;
+    padding-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,textarea{
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+
+
+}
+
+button{
+    padding: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+}

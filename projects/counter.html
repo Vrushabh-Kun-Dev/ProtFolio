@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .counter-container {
+      text-align: center;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #count {
+      font-size: 3rem;
+      color: #007acc;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .inc { background-color: #28a745; color: white; }
+    .dec { background-color: #dc3545; color: white; }
+    .reset { background-color: #6c757d; color: white; }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="counter-container">
+    <h1>Counter App</h1>
+    <div id="count">0</div>
+    <button class="inc" onclick="increase()">+ Increment</button>
+    <button class="dec" onclick="decrease()">- Decrement</button>
+    <button class="reset" onclick="reset()">Reset</button>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      document.getElementById("count").innerText = count;
+    }
+
+    function increase() {
+      count++;
+      updateDisplay();
+    }
+
+    function decrease() {
+      count--;
+      updateDisplay();
+    }
+
+    function reset() {
+      count = 0;
+      updateDisplay();
+    }
+  </script>
+
+</body>
+</html>
