@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrushabh Kunturwar | Portfolio</title>
+
+    <!-- CSS  -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- FontAwesome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header  -->
+     <header>
+        <h1>Vrushabh Kunturwar</h1>
+        <p>Frontend Developer | React | Javascript</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skils">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+     </header>
+
+
+     <!-- About  -->
+
+     <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate frontend developer with 4 years of experience in building interactive web applications using React.js and JavaScript.</p>
+     </section>
+
+
+     <!-- Skills  -->
+
+     <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-code"></i> Git / GitHub</li>
+        </ul>
+     </section>
+
+     <!-- Projects  -->
+
+     <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Counter App</h3>
+            <p>A simple counter app with increment, decrement, and reset functionality.</p>
+            <a href="projects/counter.html" target="_blank">Live Demo</a>
+
+        </div>
+
+        <div class="project">
+            <h3>To-Do List</h3>
+            <p>A task manager where you can add and delete tasks with dynamic DOM updates.</p>
+            <a href="projects/todo.html" target="_blank">Live Demo</a>
+
+        </div>
+     </section>
+
+
+     <!-- Contact  -->
+
+     <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="" id="message" placeholder="Your Message" required> </textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+     </section>
+
+
+     <!-- Footer  -->
+
+     <footer>
+        <p>© 2025 Vrushabh Kunturwar. All rights reserved.</p>
+     </footer>
+
+    
+
+
+    <!-- Script  -->
+     <script src="script.js"></script>
+</body>
+</html>
